@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin : 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    
+ 
+    
+}
+
+body {
+    background-color: black;
+    font-family: "Darker Grotesque", sans-serif;
+    color: white;
+    font-size: 16px;
+     
+}
+
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+.nav a {
+    display: block;
+    width: 100%;
+    transition: background-color 1s,font-weight .5s, padding-left .5s;
+}
+.nav .img-mobile{
+    display: none;
+}
+.nav a:hover{
+    
+    font-weight:bold;
+    padding-left: 15px ;
+   
+    background-color: rgb(204, 204, 204, 0.2);
+}
+
+
+a:hover{
+    font-weight:bold;
+    text-shadow: 2px 2px rgb(0, 0, 0, 0.7); 
+  
+}
+.nav-bar img {width: 90%;
+border-radius: 100%;
+margin-left:10px;
+
+}
+
+.nav-bar h1 {
+    text-align: center;
+    font-size: 2em;
+}
+.nav-bar {
+    width: 15vw; 
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    
+    
+}
+   
+
+.list-sociais {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.container_social-mobile{
+    display: none;
+}
+
+
+
+.container  {
+    display: flex;
+}
+
+.galeria {
+    width:100vw;
+    min-height:100vh ;
+     background-image: url(./imagens/azul.jpg); 
+    background-attachment: fixed;
+    background-size:cover;
+    
+}
+
+.galeria-boas_vindas{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 25px;
+    padding-top: 4%;
+}
+.galeria h2 {
+    font-size: 75px;
+    color: rgb(243, 242, 242);
+    text-shadow: 5px  3px rgb(0, 0, 0, 0.7);
+}
+.galeria a {
+    font-size: 30px;
+    font-weight:bold;
+    text-shadow: 3px 2px rgb(0, 0, 0, 0.7);
+}
+
+
+
+
+.container-fotos {
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+ 
+}
+
+.galeria-fotos{
+    
+    text-align: center;
+    width: 100%;
+}
+.fotos-itens{
+width: 20%;
+overflow: hidden;
+
+
+
+
+}
+
+.fotos-itens img{  
+ 
+  width: 100%;
+  height: 80%;
+  object-fit: contain;
+transition: scale .8s ease;
+  
+  
+}
+
+.fotos-itens img:hover{
+   scale:1.80;
+  
+   
+}
+
+.btn-aparecer{
+    padding:15px;
+    font-size: 20px;
+    margin-top: 5px;
+    color: white;
+    background-color: gray;
+    border-radius: 8%;
+    cursor: pointer;   
+}
+
+.btn-download {
+    padding:0px;
+    margin: 0;
+    background-color:transparent ;
+  
+}
+.btn-download::after{
+    content: url( imagens/icon\ 35x35.png
+    );
+}
+
+
+.info{
+    background-color:white;
+    width: 100vw;
+    color: black;
+   
+}
+.container-info{
+    display: flex;
+    /* position: relative; */
+    z-index: 10;
+    min-height: 100vh;;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+}
+.tiltle-info {
+    padding-top: .5em;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+.container-info h1 {
+    font-size: 2.5em;
+    font-weight: 350;
+}
+
+.tiltle-info h1 {
+   font-weight: 300; 
+    font-size: 3.5em;   
+} 
+
+.tiltle-ga h1 {
+    margin:20px ;
+}
+
+.title-lideres{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.ga-descript {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: baseline;
+    
+    
+}
+
+.title-lideres .img-fundo{
+    width: 45%;
+    height: 40vh;
+    border-radius: 4em;
+    filter: brightness(70%);
+    box-shadow: 0px 0px 20px 2px rgb(0, 0, 0, 0.9);
+}
+
+.ga-descript p {
+    font-size: 1.5em;
+    width: 50%
+}
+
+.lideres {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    align-items: flex-start;
+    justify-content:center;
+    margin-top: 5.5em;
+    gap: 10em;
+}
+
+.lideres .img-lideres{
+    width: 400px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 2px rgb(0, 0, 0, 0.9);
+
+}
+.lideres .nome {
+    font-weight: 500;
+}
+
+.lideres .subtitulo{
+    font-size: 1.7em;
+}
+
+.culto-jovem {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+
+.tiltle-culto_jovem h1{
+    margin: 20px;
+    font-weight: 350;
+    font-size: 2.5em;
+
+}
+
+.container-jovem{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.img-culto_jovem {
+    width: 40%;
+    border-radius: 4em;
+    filter: brightness(70%);
+    box-shadow: 0px 0px 20px 2px rgb(0, 0, 0, 0.9);
+}
+.jovem-descript{
+    width: 40%;
+}
+.jovem-descript h1{
+   font-weight: 400;
+}
+
+.jovem-descript p {
+    font-size: 1.5em;
+    width: 80%;
+}
+
+
+.pg{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.tiltle-pg h1{
+    font-weight: 350;
+    font-size: 2.5em;
+    margin-bottom: 35px;
+}
+
+.container-pg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    gap: 1.5em;
+    justify-content: space-around;
+
+    
+}
+.container-pg img{
+    width: 400px;
+   
+}
+
+.container-grupo{
+    width: 400px;
+    border-radius: 15px;
+    border-top:none ;
+    border: 1px solid rgb(197, 197, 197);
+    overflow: hidden;
+    background-color:rgba(226, 221, 221, 0.171);
+    box-shadow: 0px 0px 20px 2px rgb(0, 0, 0, 0.4);
+    padding-bottom: 15px;
+}
+
+ .tiltle-grupos {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2.5em;
+    text-align: center;
+    border-bottom: 1px solid rgba(51, 43, 43, 0.281);
+ }
+
+.container-grupo .subtiltle-grupos, p {
+    padding-left: 8px;
+}
+
+.subtiltle-grupos{
+    font-weight: 500;
+    font-size: 1.4em;
+ }
+
+ .container-grupo p {
+    font-size: 1.2em;
+ }
+
+
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+
+    body{
+        
+        font-size: 12px;
+
+    }
+    .container{
+       display:flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       overflow: hidden;
+       min-height: 100vh;
+      
+    }
+
+    .nav-bar{
+        position:fixed;
+        top: 0;
+        display: flex;
+        width:100vw;
+        height: 5.4vh;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #060e1a;
+        align-items: center;
+        z-index: 1000;
+        
+    }
+  .nav-bar img{
+    width: 20%;
+    display: none;
+  } 
+
+  .list-sociais{
+    display: none;
+  }
+  .mobile-menu{
+   cursor:pointer ;
+  }
+  .mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background-color: white;
+    margin: 8px;
+  }
+ 
+  .nav{
+   position: absolute;
+   top: 96%;
+   background-color: #060e1a;
+   right: 0;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top: 4vh;
+   gap: 4em;
+   transform: translateX(100%);
+   transition: transform 0.7s ease-in;
+   z-index: 10000; 
+   overflow-y: scroll;
+  }
+   
+  .nav.active{
+    transform: translateX(0);
+  }
+
+  .nav li {
+    opacity: 0;
+  }
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+    transition: transform 0.5s;
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0; 
+    transition: transform 0.5s, opacity 0,5s
+   }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+    transition: transform 0.5s;
+  }
+   
+  .mobile-menu.active .line1,.line2,.line3{
+    transition: transform 0.5s, opacity 0.5s;
+  }
+
+  .nav a {
+    display: inline-block;
+    width: 100vw;
+    text-align: center;
+    padding: 25px;;
+    transition: background-color 1s,font-weight .5s, padding .5s;
+
+}
+
+.nav a:hover{   
+   font-weight: 700;
+   background-color: rgb(204, 204, 204, 0.1);
+   padding: 30px;
+}
+
+.container_social-mobile{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 28%;
+}
+.social-mobile_itens{
+    display: flex;
+    width: 100vw;
+    padding: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+.social-mobile_itens a{ 
+ width: 100%;
+ padding: 0;
+ margin: 0;
+ background-color: transparent;
+ font-size: 2.5em;
+}
+
+.social-mobile_itens a:hover{ 
+ width: 100%;
+ padding:0;
+ background-color:transparent;
+}
+
+.galeria{
+    display: flex;
+    justify-content: center;
+}
+.galeria h2 {
+text-align: center;
+font-size: 4em;
+}
+
+.galeria img {
+    width: 80%;
+    margin-left: 40px;
+}
+
+.galeria-boas_vindas{
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.container-fotos {
+    margin-top: 6vh;
+}
+
+.fotos-itens{
+    width: 60%;
+}
+
+.tiltle-info{
+    margin-top: 6vh;
+}
+
+.ga-descript{
+ flex-direction: column;
+ align-items: center;
+   
+}
+
+.ga-descript p {
+    width: 95%;
+}
+
+.ga-descript .img-fundo{
+    width:90vw ;
+    filter: brightness(100%);
+}
+.lideres{
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.lideres .img-lideres{
+    width: 200px;
+    box-shadow: 0px 0px 20px 2px rgb(0, 0, 0, 0.4);
+}
+
+.titulos .subtitulo {
+    text-align: center;
+}
+
+.container-jovem{
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+}
+.container-jovem .img-culto_jovem{
+    width:90vw;
+    filter: brightness(100%);
+    box-shadow: 0px 0px 20px 2px rgb(0, 0, 0, 0.45);
+}
+.container-jovem .jovem-descript{
+    width: 90%;
+    padding-left: 2em;
+}
+
+.jovem-descript p {
+    padding-bottom: .5em;
+}
+
+
+.container-pg {
+    flex-direction: column;
+    align-items: center;
+    gap:5em;
+}
+
+.container-grupo{
+    width: 90vw;
+    box-shadow: 0px 0px 20px 2px rgb(0, 0, 0, .4);
+}
+
+.container-pg img {
+    width: 90vw;
+
+}
+
+.tiltle-grupos{
+    margin-top: -7px;
+}
+}
+
