@@ -2,6 +2,10 @@
 
 Este repositório contém um projeto web de uma galeria de imagens, desenvolvido com HTML, CSS e JavaScript puro. O objetivo é exibir uma coleção de imagens em um layout responsivo e funcional, com navegação fluida entre seções e dispositivos.
 
+desafio do projeto 
+ o dados.js foi usado para suprir a necessidade de um banco de dados ja q o cliente n tinha codições de manter um 
+
+
 🔄 Visão Geral
 
 O projeto é composto por três páginas principais:
