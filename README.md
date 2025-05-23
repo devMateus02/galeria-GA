@@ -28,7 +28,7 @@ Estilização moderna e intuitiva.
 
 🛠️ Tecnologias Utilizadas
 
-HTML5
+REACT
 
 CSS3
 
